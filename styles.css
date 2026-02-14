@@ -1,0 +1,71 @@
+
+        #letterSection {
+            display: none;
+            opacity: 0;
+            display: block;              /* show it */
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 51, 102, 0.2); /* semi-transparent pink */
+            border: 2px solid #ff3366;  /* pink border */
+            border-radius: 10px;         /* rounded corners */
+            max-width: 600px;
+            text-align: center;
+        }
+
+       .show {
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #0d0d0d;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #letter {
+            display: none;
+            padding: 20px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background: #ff3366;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        
+      /* Canvas container */
+        #heartCanvas {
+            margin-top: 20px;
+        }
+        .hero img {
+            width: 100%;      /* make it relative to header width */
+            height: auto;     /* keep proportions */
+            opacity: 0.25;    /* semi-transparent */
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
